@@ -1,0 +1,28 @@
+
+.container{ 
+    & .btn-brand-primary{
+    background-color: #42a97c;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s;
+    & .btn-brand-primary:hover{
+        background-color: #358d66;
+        color: #fff;
+    }
+    }
+    
+    & .btn-brand-outline{
+        background-color: #f8f9fa;
+        color: #4a5568;
+        border: 1px solid #e2e8f0;
+        font-weight: 500;
+        padding: 0.6rem 1.5rem;
+        & .btn-brand-outline{
+        background-color: #edf2f7;
+        color: #2d3748;
+    }
+    }
+    
+}
