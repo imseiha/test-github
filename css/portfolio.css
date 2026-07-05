@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfdfd;
+    color: #2D3748;
+}
+
+.navbar-brand {
+    font-weight: 800 ;
+}
+
+.nav-link {
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #009650 ;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: #009650;
+    border-radius: 2px;
+}
+
+.sticky-top {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) ;
+}
+
+@media (max-width: 991.98px) {
+    .active-link::after {
+        display: none;
+    }
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+}
+
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+.bg-light-gradient {
+    background: linear-gradient(180deg, rgba(232, 245, 233, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bg-light-green-subtle {
+    background-color: #f1f9f5;
+}
+
+.bg-light-green-gradient {
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbf9 100%);
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.06);
+}
+
+.btn-success {
+    background-color: #009650 ;
+    border-color: #009650 ;
+}
+.btn-success:hover {
+    background-color: #007a41 ;
+}
+
+.text-success {
+    color: #009650 ;
+}
+
+.style-xs {
+    font-size: 11px;
+}
+
+@media (max-width: 767.98px) {
+    .border-end {
+        border-end: none ;
+        border-bottom: 1px solid #dee2e6 ;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfdfd;
+    color: #2D3748;
+}
+
+.tracking-wider { letter-spacing: 1px; }
+.style-xs { font-size: 11px; line-height: 1.5; }
+.bg-light-gradient {
+    background: linear-gradient(180deg, rgba(232, 245, 233, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bg-light-green-subtle { background-color: #f1f9f5; }
+.bg-success-subtle { background-color: #e6f6ee ; }
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #009650;
+    border-radius: 2px;
+}
+
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+}
+
+@media (min-width: 992px) {
+    .custom-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .tech-box {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.btn-success, .bg-success, .progress-bar {
+    background-color: #009650 ;
+    border-color: #009650 ;
+}
+.btn-success:hover { background-color: #007a41 ; }
+.text-success { color: #009650 ; }
+.text-orange { color: #f06529; }
+.text-blue { color: #2965f1; }
+.text-info { color: #61dbfb; }
+@media (max-width: 767.98px) {
+    .border-end { border-end: none ; border-bottom: 1px solid #dee2e6 ; padding-bottom: 15px; }
+    .active-link::after { display: none; }
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfdfd;
+    color: #2D3748;
+}
+
+.navbar-brand {
+    font-weight: 800 ;
+}
+
+.nav-link {
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #009650 ;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #009650;
+    border-radius: 2px;
+}
+
+.sticky-top {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) ;
+}
+
+@media (max-width: 991.98px) {
+    .active-link::after {
+        display: none;
+    }
+    .navbar-nav {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .d-flex {
+        justify-content: center;
+    }
+}
+
+.bg-light-green-gradient {
+    background: linear-gradient(180deg, rgba(232, 245, 233, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.08);
+}
+
+.btn-success {
+    background-color: #009650 ;
+    border-color: #009650 ;
+}
+.btn-success:hover {
+    background-color: #007a41 ;
+}
+
+.btn-outline-success {
+    color: #009650 ;
+    border-color: #009650 ;
+}
+.btn-outline-success:hover {
+    background-color: #009650 ;
+    color: #fff ;
+}
+
+.text-success {
+    color: #009650 ;
+}
+
+.custom-table th {
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.custom-table td {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #4A5568;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent ;
+    color: #009650 ;
+    box-shadow: none ;
+}
+.accordion-button:focus {
+    box-shadow: none ;
+    border-color: rgba(0,0,0,.125);
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfdfd;
+    color: #2D3748;
+}
+.navbar-brand {
+    font-weight: 800 ;
+}
+
+.nav-link {
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #009650 ;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #009650;
+    border-radius: 2px;
+}
+
+.sticky-top {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) ;
+}
+
+@media (max-width: 991.98px) {
+    .active-link::after {
+        display: none;
+    }
+    .navbar-nav {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .d-flex {
+        justify-content: center;
+    }
+}
+
+
+.container{ 
+    & .btn-brand-primary{
+    background-color: #42a97c;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s;
+    & .btn-brand-primary:hover{
+        background-color: #358d66;
+        color: #fff;
+    }
+    }
+    
+    & .btn-brand-outline{
+        background-color: #f8f9fa;
+        color: #4a5568;
+        border: 1px solid #e2e8f0;
+        font-weight: 500;
+        padding: 0.6rem 1.5rem;
+        & .btn-brand-outline{
+        background-color: #edf2f7;
+        color: #2d3748;
+    }
+    }
+    
+}
+ .feature-ticker {
+             font-size: 0.9rem;
+             font-weight: 500;
+  }
+ .feature-ticker i {
+             color: #4a5568;
+             font-size: 1.2rem;
+  }
+  .service-card {
+             border: 1px solid #acb1bc;
+             border-radius: 12px;
+             transition: transform 0.2s, box-shadow 0.2s;
+             background: #fff;
+   }
+   .portfolio-card{
+             border: 1px solid #dee1e7;
+             border-radius: 12px;
+             transition: transform 0.2s, box-shadow 0.2s;
+             background: #fff;
+   }
+  .service-card:hover{
+             transform:  translate(-4px);
+             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  .service-icon-box{
+             font-size: 2rem;
+             color: #2d3748;
+             margin-bottom: 0.5rem;
+  }
+  .portfolio-img-placeholder{
+             background-color: none;
+             height: 180px;
+             border-radius: 8px 8px 0px 0px;
+             display: flex;
+             justify-content: center;
+             overflow: hidden;
+  }
+  .portfolio-card:hover{
+             transform:  translate(-4px);
+             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+
+.hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+}
+@media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+      }
+ }
+ .navbar-brand {
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        .nav-link {
+            font-weight: 500;
+            color: #4a5568 ;
+            margin-left: 1.5rem;
+        }
+        .nav-link:hover {
+            color: #42a97c ;
+        }
+.rating-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.rating-row .stars {
+    color: #42a97c;
+}
+
+.rating-row .stars .star-muted {
+    color: #e2e8f0;
+}
+.avatar-img{
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.section-title{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
